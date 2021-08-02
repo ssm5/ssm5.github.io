@@ -19,321 +19,161 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.js" integrity="sha512-HgRzpU8/m8pq4B+VDFo478ZO1Z4CvTuUmo3yTrB9pK1LNfVFEZDTOrtDbiT0WcrhCqxCcMDAfgIKqpzU8VSy/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <style> path {stroke: black;}</style>
+    <!-- <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script> -->
+    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/resume.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Karthik Mullapudi</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt=""/>
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#volunteer">Volunteer Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Certifications</a>
-          </li> 
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">
-            <span class="text-primary">Karthik Mullapudi</span>
-          </h1>
-          <div class="subheading mb-5">103, E. Gregory Drive, Champaign - 61820·
-            <a href="mailto:ssm5@illinois.edu">ssm5@illinois.edu</a>
-          </div>
-          <p class="mb-5">I am a student at the University of Illinois at Urbana Champaign and am currently
-          pursuing a major in Mathematics and Computer Science.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <!-- <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li> -->
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/karthik-mullapudi-1ba93b143/">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/ssm5">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Sourcer</h3>
-              <div class="subheading mb-3">Wonder</div>
-              <p> Responsible for efficiently tracking down the highest quality resources across the Web and explaining the results to clients in a personable, human way. 
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">November 2017 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Member</h3>
-              <div class="subheading mb-3">Association of Computing Machinery (ACM@Illinois)   </div>
-              <p> Member of the University of Illinois at Urbana-Champaign’s chapter of the Association of Computing Machinery.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2017 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Development Intern</h3>
-              <div class="subheading mb-3">Essker Technologies</div>
-              <p>Proposed a design and built the intranet of a human resources start up. Built the back end using the Django framework and serialized it using the Django REST API for further development of native desktop or mobile applications.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2017 - August 2017</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Website Administrator</h3>
-              <div class="subheading mb-3">Thinker’s Café</div>
-              <p>Responsible for managing the communication between writers and editors, and ultimately the safe upload of writers’ posts onto the website of an online blog where high school students can publish their critique on socioeconomic policies and scientific breakthroughs.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2016 - Present</span>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Illinois at Urbana Champaign</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Mathematics and Computer Science</div>
-              <p>GPA: N/A</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2017 - May 2021</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">The International School Bangalore</h3>
-              <div class="subheading mb-3">International Baccalaureate
+    <!-- <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">CS 416</a>
+    </nav> -->
+    
+    <div class="container-fluid">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class='row' id="description">
+                <div class="col">
+                  <h1 class="mb-3">The Coronavirus Pandemic</h1>
+                  <p>
+                    2020 has been a bizzare year. The coronavirus pandemic brought
+                    the entire world to a stand still. With cases and deaths rising to record-breaking
+                    level, countries were forced to go into lockdown to fight the invisible enemy.
+                  </p>
+                  <p>
+                    With the empty factories, and desserted roads cities around the world reported an
+                    increase in air quality and reduce in smog.
+                  </p>
+                  <p>
+                    It would be interesting to see how the world changed during these days, wouldn't it?
+                  </p>
+                </div>
               </div>
-              <div>International Baccalaureate Diploma Programme</div>
-              <p>GPA: 40/45</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2015 - May 2017</span>
+              <div class='row'>
+                <img src='img/article.png' style="width:1200px;height:300px;"></img>
+              </div>
             </div>
           </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="volunteer">
-        <div class="my-auto">
-          <h2 class="mb-5">Volunteer Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">VIVUM 2016 • Head of Department, Stage Management</h3>
-              <div class="subheading mb-3">Bengaluru, Karnataka, India  </div>
-              <p> 
-              Led a team of 20 members of the backstage and stage management crew. <br>
-              Scheduled and managed performances and all stage based competitions including but not limited to Opening and Closing Ceremonies. 
-              </p>
+          <div class="carousel-item">
+            <div class='row' id="description2">
+              <div class="col">
+                <h1 class="mb-3">The Lockdowns</h1>
+                <p>
+                  Rapid rise in cases forced major countries to shutdown their borders and enforce a
+                  string lockdown in major cities to prevent the spread of coronavirus.
+                  For instance, Europe was one of the worst hit regions early on in the pandemic with countries
+                  like Italy and Spain making the news consistently with their record breaking cases.  
+                </p>
+                <p>
+                  For this visualization, we will see how environmental variables in three Italian cities: Rome, Florence, 
+                  and Naples were affected. On the timeline below are some important dates on when Italian
+                  lockdowns started and ended. These lines will persists in the graphs in the next few slides.
+                </p>
+              </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2016 - August 2016</span>
-            </div>
+            <svg width=1200 height=900 id="lockdown-chart">
+            </svg>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Shining Star • Volunteer</h3>
-              <div class="subheading mb-3">Bengaluru, Karnataka, India   </div>
-              <p> School and care home for HIV-positive, underprivileged kids. <br>
-              Volunteered as a teacher and mentor for kids in kindergarten through Grade V. 
-
-              </p>
+          <div class="carousel-item">
+            <div class='row' id="description3">
+              <div class="col">
+                <h1 class="mb-3">pm25</h1>
+                <p>
+                  pm25 refers to atmospheric particulate matter that have a diameter of less than
+                  2.5 micrometers. Due to the lockdown, the particulate matter suspended in the air
+                  reduced to levels less they were the same time in 2019. However, the particute
+                  matter increased in the winter due to heavier in air and possibly increase in
+                  activity after the lockdowns were lifted. 
+                </p>
+                <p>
+                  <small>
+                    Hover over each of the trendlines to discover which city
+                    each one belongs to.
+                  </small>
+                </p>
+              </div>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2016 - December 2016 
-              </span>
+            <svg width=1200 height=900 id="first-chart">
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <div class='row' id="description4">
+              <div class="col">
+                <h1 class="mb-3">pm10</h1>
+                <p>
+                  Similar to pm25, pm10 refers to atmospheric particulate matter that have a diameter of less than
+                  1 micrometer. Due to the lockdown, the particulate matter suspended in the air
+                  reduced to levels less they were the same time in 2019. However, the particute
+                  matter increased in the winter due to heavier in air and possibly increase in
+                  activity after the lockdowns were lifted. 
+                </p>
+                <p>
+                  <small>
+                    Hover over each of the trendlines to discover which city
+                    each one belongs to.
+                  </small>
+                </p>
+              </div>
             </div>
+            <svg width=1200 height=900 id="second-chart">
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <div class='row' id="description5">
+              <div class="col">
+                <h1 class="mb-3">NO2</h1>
+                <p>
+                  NO2 is the amount of nitrogram dioxide in the atmospehere.
+                  The downward trend right after the lockdown can be attributed
+                  to reduce in cars on the roads.
+                </p>
+                <p>
+                  <small>
+                    Hover over each of the trendlines to discover which city
+                    each one belongs to.
+                  </small>
+                </p>
+              </div>
+            </div>
+            <svg width=1200 height=900 id="third-chart">
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <div class='row' id="description6">
+              <div class="col">
+                <h1 class="mb-3">Temperature</h1>
+                <p>
+                  Finally, the temperature seemed to be roughly the same in both years. Therefore,
+                  no real temperature change can be attributed to the lockdowns.
+                </p>
+                <p>
+                  <small>
+                    Hover over each of the trendlines to discover which city
+                    each one belongs to.
+                  </small>
+                </p>
+              </div>
+            </div>
+            <svg width=1200 height=900 id="fourth-chart">
+            </svg>
           </div>
         </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-django"></i>
-            </li> 
-            <li class="list-inline-item">
-              <i class="devicons devicons-java"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-python"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-          </ul>
-
-          <!-- <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul> -->
-        </div> 
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p> -->
-          <p> I have always been a huge fan of soccer and of the English club Manchester United F.C. I spend most of my evenings and weekends playing soccer. </p>
-          <p> I am also a huge fan of travel photography and spend a lot of my free time watching videos and tutorials made by famous travel photographers on YouTube. </p>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5"><!-- Awards &amp; --> Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <!-- <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li> -->
-            <li> 
-              <i class="fa-li fa fa-certificate"></i>
-              Applied Data Science with Python (University of Michigan, Ann Arbor) <br>
-              Expected Date of Completion: January 2018
-            </li>
-          </ul> 
-        </div>
-      </section>
-
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>   
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -345,7 +185,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
+    <script src="index.js"></script>
   </body>
 
 </html>
